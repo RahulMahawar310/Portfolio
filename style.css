@@ -189,6 +189,33 @@ span{
     margin: 2rem 0 3rem;
 }
 
+.skills{
+    margin: 2rem 0;
+}
+
+.skill-item{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.skill-title{
+    background: var(--main-color);
+    color: var(--big-color);
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    font-weight: 700;
+    min-width: 10rem;
+    text-align: center;
+}
+
+.skill-value{
+    color: var(--text-color);
+    font-weight: 500;
+}
+
 .service h2{
     margin-bottom: 5rem;
     font-size: 2.6rem;
@@ -246,6 +273,12 @@ span{
     gap: 2.5rem;
 }
 
+.project-box{
+    cursor: pointer;
+     color: var(--text-color);
+    text-decoration: none;
+}
+
 .project-container .project-box{
     position: relative;
     border-radius: 2rem;
@@ -255,8 +288,6 @@ span{
 }
 
 .project-box img{
-    /* height: 15rem;
-    width: 15rem; */
     width: 100%;
     transition: .5s ease;
     opacity: 0.7;
@@ -289,7 +320,6 @@ span{
 
 .project-layer h4{
     font-size: 3rem;
-    /* color: purple; */
 }
 
 .project-layer p{
@@ -301,15 +331,18 @@ span{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
+    margin-top: 1rem;
 }
 
 .project-layer a i{
-    font-size: 2rem;
-    color: var(--snd-bg-color);
+    font-size: 2.5rem;
+    color: var(--big-color);
+    transition: .3s ease;
+}
+
+.project-layer a:hover i{
+    color: var(--text-color);
+    transform: scale(1.2);
 }
 
 .contact h2{

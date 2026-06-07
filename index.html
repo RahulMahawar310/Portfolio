@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- fonts  -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
     <!-- header design -->
-     <header class="header">                 <!-- header.header -->
-        <a href="#" class="logo">Portfolio</a>        <!-- a.logo-->
+     <header class="header">                
+        <a href="#" class="logo">Portfolio</a>    
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
         <nav class="navbar">
@@ -29,34 +30,65 @@
         <h3>Hi, I am</h3>
         <h1>Rahul Mahawar</h1>
         <h3>And I'm a <span class=" multiple-text"></span></h3>
-        <p>"Full Stack Developer specializing in designing and building modern, scalable web applications from end to end. I have expertise in React, Node.js, Express, and MongoDB—dedicated to creating robust, responsive, and high-performance solutions.</p>
+        <p>A passionate Full Stack Developer specializing in designing and building modern, scalable web applications from end to end. With strong expertise in React, Node.js, Express, and MongoDB, I am dedicated to crafting robust, responsive, and high-performance solutions that deliver real value.</p>
+
         <div class="social-media">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/RahulMahawar310" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/RahulMahawar310" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://leetcode.com/u/rahul_mahawar310/" target="_blank"><i class="fa-solid fa-code"></i></a>
+            <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
         </div>
-        <a href="#" class="btn">Download CV</a>
+        <a href="assests/My_Resume.pdf" download="My_Resume.pdf" class="btn">Download CV</a>
        </div>
 
-       <div class="home img"></div>  <!--div.home-img -->
-       <img src="11zon_cropped (1).png" alt="">
+       <div class="home img"></div> 
+       <img src="assests/photo.png" alt="">
     </section>
 
 
     <!-- about design -->
     <section class="about" id="about">
         <div class="about img">
-            <img src="image .jpg" alt="">
+            <!-- <img src="assests/image1...png" alt=""> -->
            
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <h3>Full Stack developer and Programmer</h3>
-             <p>With a passion for both front-end and back-end development, I create seamless, user-friendly experiences and ensure reliable performance behind the scenes. My goal is to merge technology and creativity to deliver digital products that both delight users and meet business goals.<p>            
-            
-            <a href="#" class="btn">Read More</a>
+            <p>A dedicated Computer Science student with a strong foundation in full-stack web development and a keen interest in building scalable, high-performance digital solutions. I have developed hands-on expertise in both front-end and back-end technologies, enabling me to architect end-to-end applications with precision and efficiency.</p>
+            <p>With a passion for both front-end and back-end development, I create seamless, user-friendly experiences and ensure reliable performance behind the scenes. My goal is to merge technology and creativity to deliver digital products that both delight users and meet business goals.</p>
+
+            <div class="skills">
+                <h3 class="skills-heading">Technical <span>Skills</span></h3>
+                
+                <div class="skills">
+            <div class="skill-item">
+                <span class="skill-title">Languages</span>
+                <span class="skill-value">C , C++ , Python , JavaScript</span> 
+            </div>
+            <div class="skill-item">
+                <span class="skill-title">Frontend</span>
+                <span class="skill-value">React.js , Next.js , HTML , CSS , JavaScript , Redux</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-title">Backend</span>
+                <span class="skill-value">Node.js , Express.js</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-title">Database</span>
+                <span class="skill-value">MongoDB , MySQL</span>
+            </div>
+            <div class="skill-item">
+                <span class="skill-title">Tools</span>
+                <span class="skill-value">Git , GitHub , VS Code</span>
+            </div>
+        </div>
+
+            </div>
+
+           <!-- <a href="assests/My_Resume.pdf" target="_blank" class="btn">Read More</a> -->
+            <!-- <a href="#" class="btn">Read More</a> -->
         </div>
     </section>
 
@@ -68,23 +100,19 @@
             <div class="service-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Web Development</h3>
-                <p>Crafting visually stunning and highly functional websites tailored for your business needs. With expertise in both front-end and back-end technologies, I deliver seamless user experiences and robust, scalable architectures.</p>
-                <a href="#" class="btn">Read More</a>
+                <p>Crafting visually stunning, full-stack web applications from the ground up. I bridge the gap between powerful backends and pixel-perfect frontends — delivering seamless user experiences, robust APIs, and scalable architectures that drive real results..</p>
+                <!-- <a href="#" class="btn">Read More</a> -->
+                 <a href="https://github.com/RahulMahawar310" target="_blank" class="btn">Read More</a>
             </div>
 
             <div class="service-box">
                 <i class="fa-solid fa-code"></i>
                 <h3>Programming</h3>
                 <p>Designing, building, and optimizing custom software and applications. I write clean, maintainable code in modern programming languages, focusing on performance and innovation to solve real-world challenges.</p>
-                <a href="#" class="btn">Read More</a>
+                <!-- <a href="#" class="btn">Read More</a> -->
+                 <a href="https://leetcode.com/u/rahul_mahawar310/" target="_blank" class="btn">Read More</a>
             </div>
-<!-- 
-            <div class="service-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, sed soluta quaerat pariatur quisquam, corrupti possimus dolore qui ipsa laboriosam quod. Eaque, ratione impedit! Quisquam voluptate cum vitae! Unde, cupiditate!</p>
-                <a href="#" class="btn">Read More</a>
-            </div> -->
+
         </div>
     </section>
 
@@ -94,62 +122,61 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="project-container">
-            <div class="project-box">
-                <img src="news.png" alt="">
+
+            <a href="https://studyaim-aiclient.onrender.com" target="_blank" class="project-box">
+                <img src="assests/StudyAim_AI.png" alt="">
+                <div class="project-layer">
+                    <h4>StudyAim AI</h4>
+                    <p>Exam Notes Generator — Study smarter. Score higher, turn any topic into exam-ready notes in seconds.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="https://imagify-aiclient.onrender.com" target="_blank" class="project-box">
+                <img src="assests/Imagify_AI.png" alt="">
+                <div class="project-layer">
+                    <h4>Imagify AI</h4>
+                    <p>AI Image Generator — Words become worlds, just describe and we create. Your imagination rendered in milliseconds.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="https://employee-salary-prediction---rahul-mahawar-dekh3ay7n8cirs3aowa.streamlit.app" target="_blank" class="project-box">
+                <img src="assests/Employee-Salary_Prediction.png" alt="">
+                <div class="project-layer">
+                    <h4>Employee Salary Prediction</h4>
+                    <p>Data-driven salaries. No more guesswork — predicting paychecks with the power of machine learning.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a href="https://github.com/RahulMahawar310/Face_Recognition" target="_blank" class="project-box">
+                <img src="assests\face_recognition...png" alt="">
+                <div class="project-layer">
+                    <h4>Face Recognition</h4>
+                    <p>Face Recognition using Python — No cards. No PINs. Just you. Recognition in the blink of an eye.</p>
+                    <i class="fa-solid fa-up-right-from-square"></i>
+                </div>
+            </a>
+
+            <a class="project-box">
+                <img src="assests/news.png" alt="">
                 <div class="project-layer">
                     <h4>News Website</h4>
-                    <p>Developed a dynamic and responsive news website using React.js, showcasing proficiency in front-end development, component-based architecture, and state management.</p>
+                    <p>Dynamic and responsive news website using React.js with component-based architecture and state management.</p>
                     <i class="fa-solid fa-up-right-from-square"></i>
                 </div>
-            </div>
+            </a>
 
-            <div class="project-box">
-                <img src="ChatBot.png" alt="">
+            <a class="project-box">
+                <img src="assests/ChatBot.png" alt="">
                 <div class="project-layer">
                     <h4>AI Powered ChatBot</h4>
-                    <p>The chatbot features the ability to answer frequently asked questions about the website and engage in simple conversational exchanges.</p>
+                    <p>Chatbot that answers FAQs and engages in simple conversational exchanges with users.</p>
                     <i class="fa-solid fa-up-right-from-square"></i>
                 </div>
-            </div>
+            </a>
 
-            
-            <div class="project-box">
-                <img src="LoginPage.png" alt="">
-                <div class="project-layer">
-                    <h4>Login Page</h4>
-                    <p>A user-friendly login page is set against a vibrant, animated, creating an inviting and visually engaging experience.</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            
-            <!-- <div class="project-box">
-                <img src="Calculator.png" alt="">
-                <div class="project-layer">
-                    <h4>Calculator</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quidem!</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            
-            <div class="project-box">
-                <img src="tic-tac-toe.png" alt="">
-                <div class="project-layer">
-                    <h4>Tic-Tac-Toe Game</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quidem!</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div>
-
-            <div class="project-box">
-                <img src=" Screenshot (78).png" alt="">
-                <div class="project-layer">
-                    <h4>Web design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quidem!</p>
-                    <i class="fa-solid fa-up-right-from-square"></i>
-                </div>
-            </div> -->
         </div>
     </section>
 
@@ -157,19 +184,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
-            </div>
+        <form id="contact-form">
+    <div class="input-box">
+        <input type="text" name="from_name" placeholder="Full Name">
+        <input type="email" name="from_email" placeholder="Email Address">
+    </div>
 
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="30" placeholder="Your Message..."></textarea>
-            <input type="submit" value="Send Message" class="btn">
-        </form>
+    <div class="input-box">
+        <input type="number" name="mobile_number" placeholder="Mobile Number">
+        <input type="text" name="email_subject" placeholder="Email Subject">
+    </div>
+    <textarea name="message" cols="30" rows="30" placeholder="Your Message..."></textarea>
+    <input type="submit" value="Send Message" class="btn">
+</form>
     </section>
 
 

@@ -1,13 +1,10 @@
-/* **************************   toggle navbar  **************************** */
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('active');
 };
-
-/* **************************   scroll action active link  **************************** */
 
 let section = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -20,39 +17,53 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            navLinks.forEach.apply(links => {
+            navLinks.forEach(links => {
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
-            })
+            });
         }
-    })
-    /* **************************  sticky navbar  **************************** */
+    });
+
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-    /* **************************  remove toggle icon and navbar  **************************** */
     menuIcon.classList.remove('fa-xmark');
     navbar.classList.remove('active');
 };
 
-/* **************************  remove toggle icon and navbar  **************************** */
 ScrollReveal({
     distance: '80px',
     duration: 2000,
     delay: 200,
 });
 
-ScrollReveal().reveal('.home-content, heading', { origin:'top'});
-ScrollReveal().reveal('.home img, .service-container, portfolio-box, contact form', { origin: 'button' });
-ScrollReveal().reveal('.home-contact h1, .about-img', { origin:'left'});
-ScrollReveal().reveal('.home-contact p, .about-content', { origin:'right'});
+ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
+ScrollReveal().reveal('.home img, .service-container, .portfolio-box, contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
-
-/* **************************  type js **************************** */
 const typed = new Typed('.multiple-text', {
-    strings:['Full Stack developer','Web developer','Programmer'],
-    typeSpeed:70,
+    strings: ['Full Stack Developer', 'Web Developer', 'Programmer'],
+    typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
-    loop:true,
+    loop: true,
 });
+
+(function(){
+    emailjs.init("gV-JZfO3ZXSTNvXaH");
+})();
+
+document.querySelector('#contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    emailjs.sendForm('service_s722pob', 'template_wa7iant', this)
+        .then(function() {
+            alert('✅ Message sent successfully!');
+            document.querySelector('#contact-form').reset();
+        }, function(error) {
+            alert('❌ Failed: ' + JSON.stringify(error));
+        });
+});
+
+
